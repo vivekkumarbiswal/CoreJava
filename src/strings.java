@@ -6,7 +6,7 @@ public class strings {
 //
 //    }
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
         // String input
 //        Scanner sc = new Scanner(System.in);
 //        String str = sc.nextLine();
@@ -61,5 +61,37 @@ public class strings {
 
         // System.out.println(count);
         // }
-    }
+//    }
+        public static void main(String[] args) {
+//            Count how many times 'a' appears
+//
+//            Input: "banana"
+//            Output: 3
+//            String str = "banana";
+//
+//            char a = 'a';
+//            int count = 0;
+//            for (int i = 0; i < str.length(); i++){
+//                if(str.charAt(i) == a){
+//                    count++;
+//                }
+//            }
+//            System.out.println(count);
+
+//            Input: "hello"
+//            Output: "HELLO"
+
+            String str = "hello";
+
+            StringBuilder result = new StringBuilder();
+//            System.out.println(str.toUpperCase());
+            for(int i = 0; i < str.length(); i++){
+                char ch = str.charAt(i);
+                if(ch >= 'a' && ch <= 'z'){
+                    ch = (char) (str.charAt(i) - 32);
+                }
+                result.append(ch);
+            }
+            System.out.println(result);
+        }
 }
