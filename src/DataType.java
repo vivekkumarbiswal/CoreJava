@@ -10,6 +10,14 @@ public class DataType {
         double dnum = 3.4;
         float fnum = 5.6f;
 
+
+
+        // literals
+        double num1 = 12e10;
+        System.out.println(num1);
+
+
+
         System.out.println(num);
         System.out.println(bnum);
         System.out.println(sh);
